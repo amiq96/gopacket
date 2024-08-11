@@ -21,8 +21,8 @@ package tcpassembly
 import (
 	"flag"
 	"fmt"
-	"github.com/google/gopacket"
-	"github.com/google/gopacket/layers"
+	"github.com/amiq96/gopacket"
+	"github.com/amiq96/gopacket/layers"
 	"log"
 	"sync"
 	"time"
