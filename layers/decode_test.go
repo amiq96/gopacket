@@ -16,8 +16,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/google/gopacket"
-	"github.com/google/gopacket/bytediff"
+	"github.com/amiq96/gopacket"
+	"github.com/amiq96/gopacket/bytediff"
 )
 
 var testSimpleTCPPacket = []byte{

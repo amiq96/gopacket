@@ -9,7 +9,7 @@ package layers
 import (
 	"encoding/binary"
 
-	"github.com/google/gopacket"
+	"github.com/amiq96/gopacket"
 )
 
 const (
