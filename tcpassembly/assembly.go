@@ -627,7 +627,7 @@ func (a *Assembler) sendToConnection(conn *connection) {
 		panic("why?")
 	}
 	conn.stream.Reassembled(a.ret)
-	if a.ret[len(a.ret)-1].End {
+	if len(a.ret)>0 && a.ret[len(a.ret)-1].End {
 		a.closeConnection(conn)
 	}
 }
