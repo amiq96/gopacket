@@ -711,7 +711,8 @@ func (c *connection) pushBetween(prev, next, first, last *page) {
 
 func (a *Assembler) insertIntoConn(t *layers.TCP, conn *connection, ts time.Time) {
 	if conn.first != nil && conn.first.seq == conn.nextSeq {
-		panic("wtf")
+		return
+               //panic("wtf")
 	}
 	p, p2, numPages := a.pagesFromTCP(t, ts)
 	prev, current := conn.traverseConn(Sequence(t.Seq))
