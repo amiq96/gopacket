@@ -774,7 +774,9 @@ func (a *Assembler) addNextFromConn(conn *connection) {
 		conn.last = nil
 	} else {
 		conn.first = conn.first.next
-		conn.first.prev = nil
+	       if conn.first != nil {
+                   conn.first.prev = nil
+               }
 	}
 	conn.pages--
 }
